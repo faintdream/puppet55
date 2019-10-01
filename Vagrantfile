@@ -10,7 +10,11 @@ Vagrant.configure("2") do |config|
     puppet.vm.network "private_network", ip:"192.168.33.10" 
     puppet.vm.provision "shell", inline: <<-ANOTHERONE
       yum install --nogpgcheck https://yum.puppet.com/puppet5/puppet5-release-el-7.noarch.rpm -y
+      yum install git -y
       yum install -y puppetserver
+      rpm -Uvh https://yum.puppet.com/puppet-tools-release-el-7.noarch.rpm
+      yum install -y puppet-bolt
+      yum install -y gem
       echo '127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
       ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
       192.168.33.10  puppet.example.com puppet
@@ -31,6 +35,7 @@ Vagrant.configure("2") do |config|
     node.vm.network "private_network", ip:"192.168.33.20" 
     node.vm.provision "shell", inline: <<-ANOTHERONE
       yum install --nogpgcheck https://yum.puppet.com/puppet5/puppet5-release-el-7.noarch.rpm -y
+      yum install git -y
       yum install -y puppet
       echo '127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
       ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
@@ -53,6 +58,7 @@ Vagrant.configure("2") do |config|
       apt-get install puppet5-release-bionic.deb -y
       apt-get update
       apt-get install puppet -y
+      apt-get install git -y
       echo '127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
       ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
       192.168.33.21 ubuntu
