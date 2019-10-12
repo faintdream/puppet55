@@ -1,6 +1,6 @@
 
 
-# Introduction to building Puppet test environment using vagrant & virtualbox
+# Introduction
 
 I frequently write puppet modules so i always have to have a working puppet test environment with multiple nodes. while the instructions for setting up puppet server and agent are no way difficult but  require some amount of manual work, which is not much fun and overtime virtual machines running on laptop go unstable due to no. of reasons, including me trying crazy things :-) . So everytime i start a new project it consumes an hour or so before i can even start being productive, this lead me to write  **_Vagrantfile_** file to automate the process.
 
