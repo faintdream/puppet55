@@ -43,13 +43,13 @@ Screenshots for reference
 
 ![image-20191012101153939](images/vagrant_up3.png)
 
-![image-20191012101323139](/Users/akash.dubey/development/puppet_training/puppet55/images/vagrant_up4.png)
+![image-20191012101323139](images/vagrant_up4.png)
 
-![image-20191012101506355](/Users/akash.dubey/development/puppet_training/puppet55/images/vagrant_up5.png)
+![image-20191012101506355](images/vagrant_up5.png)
 
 ![image-20191012101624789](images/vagrant_up6.png)
 
-![image-20191012102046820](/Users/akash.dubey/development/puppet_training/puppet55/images/vagrant_status.png)
+![image-20191012102046820](images/vagrant_status.png)
 
 
 
