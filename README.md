@@ -55,7 +55,7 @@ Screenshots for reference
 
 The new puppet test environment is up , but `puppet agent` running on the VMs are still not configured to talk to `puppet master/puppetserver`
 
-* Establish HTTPS connectivity between all servers running `puppet agent` to server running `puppet master/puppetserver`  `puppetserver` 
+* Establish HTTPS connectivity between all servers running `puppet agent` to server running `puppet master/puppetserver` 
 
 Commands to run on each server running `puppet agent`
 
