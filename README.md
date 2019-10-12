@@ -37,11 +37,11 @@ Install following packages
 
 Screenshots for reference
 
-![image-20191012100548899](images/vagrant_up1.png)
+<img src='images/vagrant_up1.png' width=500>
 
-![image-20191012100754145](images/vagrant_up2.png)
+<img src='images/vagrant_up2.png' width=500>
 
-![image-20191012101153939](images/vagrant_up3.png)
+![:](images/vagrant_up3.png)
 
 ![image-20191012101323139](images/vagrant_up4.png)
 
