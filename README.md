@@ -26,30 +26,28 @@ Install following packages
 
 * Launch CMD/Terminal/Console on your system and run `vagrant init`, if this works we are good to proceed to next step.
 
-![image-20191012094909405](images/vagrant_init,png.png)
+<img src='images/vagrant_init,png.png' width=500>
 
 
 
 * Let's begin setting up puppet test environment,
-  1. run `git clone https://github.com/faintdream/puppet55.git` 
+  1.  `git clone https://github.com/faintdream/puppet55.git` 
   2.  `cd puppe55`
   3.  `vagrant up`
-
-Screenshots for reference
 
 <img src='images/vagrant_up1.png' width=500>
 
 <img src='images/vagrant_up2.png' width=500>
 
-![:](images/vagrant_up3.png)
+<img src='images/vagrant_up3.png' width=500>
 
-![image-20191012101323139](images/vagrant_up4.png)
+<img src='images/vagrant_up4.png' width=500>
 
-![image-20191012101506355](images/vagrant_up5.png)
+<img src='images/vagrant_up5.png' width=500>
 
-![image-20191012101624789](images/vagrant_up6.png)
+<img src='images/vagrant_up6.png' width=500>
 
-![image-20191012102046820](images/vagrant_status.png)
+<img src='images/vagrant_status.png' width=500>
 
 
 
@@ -67,9 +65,9 @@ Commands to run on each server running `puppet agent`
 
    This will generate a client side ssl and will be used by `puppetserver` to authenticate the vm as a valid node.
 
-   ![image-20191012120508275](/Users/akash.dubey/development/puppet_training/puppet55/images/ubuntu_cert_request.png)
+   <img src='images/ubuntu_cert_request.png' width=500>
 
-   ![image-20191012120413314](/Users/akash.dubey/development/puppet_training/puppet55/images/node_cert_request.png)
+   <img src='images/node_cert_request.png' width=500>
 
    
 
@@ -79,7 +77,7 @@ Commands to run on server running `puppet master/puppetserver`
 
    this will sign all pending certificate requests, that means all nodes can talk to `puppetserver` 
 
-   ![image-20191012120153818](images/puppet_cert_sign.png)
+   <img src='images/puppet_cert_sign.png' width=500>
 
 
 
@@ -117,4 +115,8 @@ Vagrant command reference:
 ### Troubleshooting
 
 * if you get below certificate error, it means that certificate is not working, we need to delete it as instructed in error output from the server running `puppet agent` as well as from the `puppet master/puppetserver`
-* ![image-20191012103005286](images/error1.png)
+
+  <img src='images/error1.png' width=500>
+
+
+
