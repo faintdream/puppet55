@@ -67,6 +67,10 @@ Commands to run on each server running `puppet agent`
 
    This will generate a client side ssl and will be used by `puppetserver` to authenticate the vm as a valid node.
 
+   ![image-20191012120508275](/Users/akash.dubey/development/puppet_training/puppet55/images/ubuntu_cert_request.png)
+
+   ![image-20191012120413314](/Users/akash.dubey/development/puppet_training/puppet55/images/node_cert_request.png)
+
    
 
 Commands to run on server running `puppet master/puppetserver`
@@ -75,15 +79,27 @@ Commands to run on server running `puppet master/puppetserver`
 
    this will sign all pending certificate requests, that means all nodes can talk to `puppetserver` 
 
+   ![image-20191012120153818](images/puppet_cert_sign.png)
 
 
-Validate the connectivity by running ` puppet agent -t `  as `root` on vm named `node`, this should install `apache` module on `node`
+
+
+
+A working puppet test environment is now ready  !
+
+###### Bonus points if you get around this
+
+To apply an exisitng `apache` module on `node` run  ` puppet agent -t `  as `root`, this should install `apache`  on the server.
 
 1. `vagrant ssh node`
 2. `sudo su `
 3. `puppet agent -t`
 
-Note: during bootstrap we download several sample modules on `puppetserver`  via `r10k` , if curious how this happens please look through `Vagrantfile` as well as `Puppetfile`  [r10k-site](https://github.com/faintdream/r10k-site).
+Note: during bootstrap we downloaded several sample modules i created for demo purpose via `r10k` on `puppetserver` , if you are curious how the modules got deployed on `puppetserver` please look through `Vagrantfile` as well as `Puppetfile` under  [r10k-site](https://github.com/faintdream/r10k-site).
+
+
+
+
 
 Vagrant command reference:
 
