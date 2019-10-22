@@ -32,6 +32,7 @@ Vagrant.configure("2") do |config|
       echo '      basedir: /etc/puppetlabs/code/environments' >> /etc/puppetlabs/r10k/r10k.yaml
       export PATH=$PATH:/opt/puppetlabs/puppet/bin
       r10k deploy environment -pv
+      puppet agent -t
     MASTER
   end 
 
